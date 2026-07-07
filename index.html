@@ -635,6 +635,20 @@ const FALLBACK = {
     { source_period:"Май 2026 + 1 июня", metric:"neutrals_pct", value:"13.3" },
     { source_period:"Май 2026 + 1 июня", metric:"critics_count", value:"11" },
     { source_period:"Май 2026 + 1 июня", metric:"critics_pct", value:"14.7" },
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", key:"period_start", value:"2026-06-01" },
+    { source_period:"Июнь 2026", key:"period_end",   value:"2026-06-26" },
+    { source_period:"Июнь 2026", key:"total_responses", value:"203" },
+    { source_period:"Июнь 2026", key:"valid_q4_forced", value:"203" },
+    { source_period:"Июнь 2026", key:"valid_recommendation_classified", value:"169" },
+    { source_period:"Июнь 2026", key:"recommendation_score", value:"50" },
+    { source_period:"Июнь 2026", key:"promoters_count", value:"112" },
+    { source_period:"Июнь 2026", key:"promoters_pct", value:"66.3" },
+    { source_period:"Июнь 2026", key:"neutrals_count", value:"30" },
+    { source_period:"Июнь 2026", key:"neutrals_pct", value:"17.8" },
+    { source_period:"Июнь 2026", key:"critics_count", value:"27" },
+    { source_period:"Июнь 2026", key:"critics_pct", value:"16.0" },
+    { source_period:"Июнь 2026", key:"no_answer_recommendation", value:"34" },
   ],
   theme_summary: [
     { source_period:"До мая 2026", theme:"Таймеры, опоздания и рейтинг", mentions:"94", share:"37.2", priority:"P0", description:"Новички сталкиваются с нехваткой времени и риском просрочки.", hypothesis:"Grace period для новичков / заказы с запасом времени / отдельная логика рейтинга в первые смены" },
@@ -662,6 +676,19 @@ const FALLBACK = {
     { source_period:"Май 2026 + 1 июня", theme:"Общение с клиентом", mentions:"7", share:"8.4", priority:"P2" },
     { source_period:"Май 2026 + 1 июня", theme:"Велосипеды, форма, термосумки", mentions:"6", share:"7.2", priority:"P2" },
     { source_period:"Май 2026 + 1 июня", theme:"Сборка, пакеты, полки, поиск заказов", mentions:"8", share:"9.6", priority:"P1/P2", share_delta_pp:"-5.8", trend:"ослабло" },
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", theme:"Оплата, ставки, деньги, бонусы", mentions:51, share:25.1, priority:"Out / P1", description:"Оплата остаётся главной болью — упоминается каждым четвёртым.", hypothesis:"Прозрачность начислений, доплаты за дальность / сложность / погоду", share_delta_pp:-19.5, trend:"ослабло" },
+    { source_period:"Июнь 2026", theme:"Таймеры, опоздания и рейтинг", mentions:30, share:14.8, priority:"P0", description:"Нехватка времени и риск просрочки давят на рейтинг и доход новичков.", hypothesis:"Grace period для новичков / увеличить норматив времени в первые смены", share_delta_pp:-14.1, trend:"ослабло" },
+    { source_period:"Июнь 2026", theme:"Маршруты, район и навигация", mentions:29, share:14.3, priority:"P1", description:"Навигация в приложении строит маршрут от ДС, а не от текущего местоположения.", hypothesis:"Исправить логику построения маршрута / улучшить карту закрытых зон", share_delta_pp:-24.3, trend:"ослабло" },
+    { source_period:"Июнь 2026", theme:"Куратор, наставник и поддержка", mentions:25, share:12.3, priority:"P0/P1", description:"Куратор — ключевой фактор: помогает или мешает. Хамство единичных кураторов влияет на оценку всей системы.", hypothesis:"Стандарт работы куратора + оценка куратора новичком", share_delta_pp:-21.4, trend:"ослабло" },
+    { source_period:"Июнь 2026", theme:"Велосипеды, форма, термосумки", mentions:24, share:11.8, priority:"P2", description:"Задержка выдачи оборудования и одежды блокирует комфортный старт.", hypothesis:"Бронь велосипеда + комплект новичка в первый день", share_delta_pp:4.6, trend:"усилилось" },
+    { source_period:"Июнь 2026", theme:"Онбординг и первые объяснения", mentions:20, share:9.9, priority:"P0", description:"Не хватает базового инструктажа: что делать при наличной оплате, как найти заказ, как вести себя с клиентом.", hypothesis:"Групповой инструктаж в первый день + памятка новичка", share_delta_pp:-17.8, trend:"ослабло" },
+    { source_period:"Июнь 2026", theme:"Общение с клиентом", mentions:18, share:8.9, priority:"P2", description:"Клиенты не берут трубку, игнорируют звонки, ситуации с возвратами." },
+    { source_period:"Июнь 2026", theme:"Сборка, пакеты, полки, поиск заказов", mentions:17, share:8.4, priority:"P1/P2", description:"Трудно найти нужный пакет на полке, ошибки при сборке." },
+    { source_period:"Июнь 2026", theme:"Приложение и интерфейс", mentions:16, share:7.9, priority:"P1", description:"Баги: кнопки уходят под системные панели, маршрут строится некорректно.", hypothesis:"Регулярные QA-циклы + фидбек от новичков по UX", share_delta_pp:-6.6, trend:"ослабло" },
+    { source_period:"Июнь 2026", theme:"Физические условия: погода, парковки", mentions:15, share:7.4, priority:"P2", description:"Шлагбаумы, дальние зоны, жара — влияют на скорость и самочувствие." },
+    { source_period:"Июнь 2026", theme:"Очередь и распределение заказов", mentions:15, share:7.4, priority:"P1 / hidden P0", description:"Ощущение несправедливого распределения заказов внутри команды.", hypothesis:"Прозрачная логика очереди для новичков" },
+    { source_period:"Июнь 2026", theme:"Позитивный опыт старта", mentions:34, share:16.7, priority:"Positive", description:"Каждый шестой отметил хороший первый опыт." },
   ],
   forced_choice: [
     { source_period:"До мая 2026", theme:"Нет явной проблемы", mentions:"30", priority:"Control" },
@@ -685,6 +712,18 @@ const FALLBACK = {
     { source_period:"Май 2026 + 1 июня", theme:"Сборка, пакеты, полки", mentions:"3", priority:"P1/P2" },
     { source_period:"Май 2026 + 1 июня", theme:"Приложение и интерфейс", mentions:"3", priority:"P1" },
     { source_period:"Май 2026 + 1 июня", theme:"Таймеры, опоздания и рейтинг", mentions:"3", priority:"P0" },
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", theme:"Оплата, ставки и мотивация", mentions:51, priority:"Out / P1" },
+    { source_period:"Июнь 2026", theme:"Таймеры, опоздания и рейтинг", mentions:30, priority:"P0" },
+    { source_period:"Июнь 2026", theme:"Маршруты, район и навигация", mentions:29, priority:"P1" },
+    { source_period:"Июнь 2026", theme:"Куратор, наставник и поддержка", mentions:25, priority:"P0/P1" },
+    { source_period:"Июнь 2026", theme:"Велосипеды, форма, термосумки", mentions:24, priority:"P2" },
+    { source_period:"Июнь 2026", theme:"Онбординг и первые объяснения", mentions:20, priority:"P0" },
+    { source_period:"Июнь 2026", theme:"Общение с клиентом", mentions:18, priority:"P2" },
+    { source_period:"Июнь 2026", theme:"Сборка, пакеты, полки", mentions:17, priority:"P1/P2" },
+    { source_period:"Июнь 2026", theme:"Приложение и интерфейс", mentions:16, priority:"P1" },
+    { source_period:"Июнь 2026", theme:"Физические условия", mentions:15, priority:"P2" },
+    { source_period:"Июнь 2026", theme:"Очередь и распределение заказов", mentions:15, priority:"P1 / hidden P0" },
   ],
   recommendation: [
     { source_period:"До мая 2026", group:"promoter", count:"112", share_pct:"64.0" },
@@ -693,6 +732,10 @@ const FALLBACK = {
     { source_period:"Май 2026 + 1 июня", group:"promoter", count:"54", share_pct:"72.0" },
     { source_period:"Май 2026 + 1 июня", group:"neutral",  count:"10", share_pct:"13.3" },
     { source_period:"Май 2026 + 1 июня", group:"critic",   count:"11", share_pct:"14.7" },
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", group:"promoter", count:"112", share_pct:"66.3" },
+    { source_period:"Июнь 2026", group:"neutral",  count:"30",  share_pct:"17.8" },
+    { source_period:"Июнь 2026", group:"critic",   count:"27",  share_pct:"16.0" },
   ],
   positive_drivers: [
     { source_period:"До мая 2026", positive_driver:"Куратор / коллеги / поддержка", respondent_count:"51", share_pct:"0.2713", why_important:"Показывает, что уже работает в первую неделю" },
@@ -700,11 +743,24 @@ const FALLBACK = {
     { source_period:"До мая 2026", positive_driver:"Деньги / бонусы / чаевые", respondent_count:"20", share_pct:"0.1064", why_important:"Финансовая мотивация работает" },
     { source_period:"До мая 2026", positive_driver:"Понятное приложение / процесс", respondent_count:"15", share_pct:"0.0798", why_important:"UX работает на старт" },
     { source_period:"До мая 2026", positive_driver:"Свободный график", respondent_count:"7", share_pct:"0.0372", why_important:"Гибкость ценится" },
+
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", week_start:"2026-06-01", responses:57, recommendation_score:48, comment:"База достаточная" },
+    { source_period:"Июнь 2026", week_start:"2026-06-08", responses:77, recommendation_score:43, comment:"База достаточная" },
+    { source_period:"Июнь 2026", week_start:"2026-06-22", responses:69, recommendation_score:61, comment:"База достаточная" },
+  ],
+  positive_drivers: [
     { source_period:"Май 2026 + 1 июня", positive_driver:"Куратор / коллеги / поддержка", respondent_count:"22", share_pct:"0.265", why_important:"Остаётся главным позитивным фактором" },
     { source_period:"Май 2026 + 1 июня", positive_driver:"Быстрый старт / заказы", respondent_count:"18", share_pct:"0.217", why_important:"Скорость включения" },
     { source_period:"Май 2026 + 1 июня", positive_driver:"Понятное приложение / процесс", respondent_count:"12", share_pct:"0.145", why_important:"UX стал более заметным позитивом" },
     { source_period:"Май 2026 + 1 июня", positive_driver:"Деньги / бонусы / чаевые", respondent_count:"10", share_pct:"0.12", why_important:"Чаевые радуют новичков" },
     { source_period:"Май 2026 + 1 июня", positive_driver:"Свободный график", respondent_count:"8", share_pct:"0.096", why_important:"Гибкость ценится" },
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", positive_driver:"Куратор / коллеги / поддержка", respondent_count:"32", share_pct:"0.158", why_important:"Остаётся главным позитивным фактором старта" },
+    { source_period:"Июнь 2026", positive_driver:"Команда и атмосфера", respondent_count:"20", share_pct:"0.099", why_important:"Дружный коллектив снижает стресс первых дней" },
+    { source_period:"Июнь 2026", positive_driver:"Быстрый старт / заказы", respondent_count:"15", share_pct:"0.074", why_important:"Скорость включения в процесс важна" },
+    { source_period:"Июнь 2026", positive_driver:"Понятное приложение / процесс", respondent_count:"12", share_pct:"0.059", why_important:"UX работает на уверенный старт" },
+    { source_period:"Июнь 2026", positive_driver:"Деньги / бонусы / чаевые", respondent_count:"10", share_pct:"0.049", why_important:"Чаевые и бонусы приятно удивляют" },
   ],
   quotes: [
     { source_period:"До мая 2026", theme:"Таймеры, опоздания и рейтинг", quote:"В часы-пик вознаграждение не увеличивается. Время затрачивается дольше и топливо расходуется больше.", priority:"P0" },
@@ -718,6 +774,13 @@ const FALLBACK = {
     { source_period:"Май 2026 + 1 июня", theme:"Таймеры, опоздания и рейтинг", quote:"Поставил бы хотя бы 1 электровелосипед чисто для стажёров, стажировку проходили бы 10-часовую, максимально вникая в суть работы.", priority:"P0" },
     { source_period:"Май 2026 + 1 июня", theme:"Онбординг и первые объяснения", quote:"Инструктаж, которого не было.", priority:"P0" },
     { source_period:"Май 2026 + 1 июня", theme:"Приложение и интерфейс", quote:"Иногда глючит приложение.", priority:"P1" },
+    // ── Июнь 2026 ──────────────────────────────────────────────────
+    { source_period:"Июнь 2026", theme:"Оплата, ставки, деньги, бонусы", quote:"Очень маленькая оплата труда.", priority:"Out / P1" },
+    { source_period:"Июнь 2026", theme:"Маршруты, район и навигация", quote:"При нажатии на адрес доставки маршрут прокладывается не с текущего местоположения, а от местоположения ДС. Немного сбивает с толку.", priority:"P1" },
+    { source_period:"Июнь 2026", theme:"Куратор, наставник и поддержка", quote:"40 литров воды на 5 этаж — и эгоистичный невежливый куратор.", priority:"P0/P1" },
+    { source_period:"Июнь 2026", theme:"Таймеры, опоздания и рейтинг", quote:"Проблемы были в построении маршрутов, чтобы успеть вовремя к клиенту.", priority:"P0" },
+    { source_period:"Июнь 2026", theme:"Онбординг и первые объяснения", quote:"Полчаса разъяснения как мы работаем, один заказ собрать вместе с новичком, а один пусть соберёт сам под присмотром.", priority:"P0" },
+    { source_period:"Июнь 2026", theme:"Приложение и интерфейс", quote:"В полноэкранном режиме приложение раскрывается на весь экран — кнопки уходят под системную панель.", priority:"P1" },
   ],
   comparison_prev_period: [
     { theme:"Нет явной проблемы / всё нормально", may_share:"48.2", previous_share:"17.0", delta_pp:"31.2", trend:"усилилось", priority:"Positive / Control" },
@@ -729,6 +792,15 @@ const FALLBACK = {
     { theme:"Оплата, ставки, деньги, бонусы", may_share:"44.6", previous_share:"48.9", delta_pp:"-4.3", trend:"стабильно", priority:"Out / P1" },
     { theme:"Маршруты, район и навигация", may_share:"38.6", previous_share:"34.0", delta_pp:"4.6", trend:"усилилось", priority:"P1" },
     { theme:"Приложение и интерфейс", may_share:"14.5", previous_share:"12.8", delta_pp:"1.7", trend:"стабильно", priority:"P1" },
+    // ── Июнь 2026 vs Май 2026 ──────────────────────────────────────
+    { source_period:"Июнь 2026", theme:"Велосипеды, форма, термосумки", may_share:"7.2", previous_share:"11.8", delta_pp:"4.6", trend:"усилилось", priority:"P2" },
+    { source_period:"Июнь 2026", theme:"Маршруты, район и навигация", may_share:"38.6", previous_share:"14.3", delta_pp:"-24.3", trend:"ослабло", priority:"P1" },
+    { source_period:"Июнь 2026", theme:"Куратор, наставник и поддержка", may_share:"33.7", previous_share:"12.3", delta_pp:"-21.4", trend:"ослабло", priority:"P0/P1" },
+    { source_period:"Июнь 2026", theme:"Оплата, ставки, деньги, бонусы", may_share:"44.6", previous_share:"25.1", delta_pp:"-19.5", trend:"ослабло", priority:"Out / P1" },
+    { source_period:"Июнь 2026", theme:"Онбординг и первые объяснения", may_share:"27.7", previous_share:"9.9", delta_pp:"-17.8", trend:"ослабло", priority:"P0" },
+    { source_period:"Июнь 2026", theme:"Таймеры, опоздания и рейтинг", may_share:"28.9", previous_share:"14.8", delta_pp:"-14.1", trend:"ослабло", priority:"P0" },
+    { source_period:"Июнь 2026", theme:"Приложение и интерфейс", may_share:"14.5", previous_share:"7.9", delta_pp:"-6.6", trend:"ослабло", priority:"P1" },
+    { source_period:"Июнь 2026", theme:"Позитивный опыт старта", may_share:"50.6", previous_share:"16.7", delta_pp:"-33.9", trend:"ослабло", priority:"Positive" },
   ],
 };
 
